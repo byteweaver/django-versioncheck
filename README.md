@@ -26,3 +26,11 @@ At the momement django-versioncheck does just provide a simple management comman
 version and the latest upstream version on PYPI.
 
     $ python manage.py checkversion
+
+
+## Todo & Roadmap
+
+It is just a protoype, must features are not ready yet.
+
+* Email notifications if django is outdated
+* View restricted to admins which shows django versions
