@@ -19,3 +19,10 @@ Add `versioncheck` to your `INSTALLED_APPS`:
         'versioncheck',
         ...
     )
+
+## How to use
+
+At the momement django-versioncheck does just provide a simple management command to display the installed django
+version and the latest upstream version on PYPI.
+
+    $ python manage.py checkversion
