@@ -30,7 +30,7 @@ version and the latest upstream version on PYPI.
 
 ## Todo & Roadmap
 
-It is just a protoype, must features are not ready yet.
+It is just a protoype, most features are not ready yet.
 
 * Email notifications if django is outdated
 * View restricted to admins which shows django versions
