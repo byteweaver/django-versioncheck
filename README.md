@@ -28,6 +28,11 @@ version and the latest upstream version on PYPI.
     $ python manage.py checkversion
 
 
+## Python version notice
+
+The current version is developed to be used with Python 3 and only tested on this major version.
+
+
 ## Todo & Roadmap
 
 It is just a protoype, most features are not ready yet.
