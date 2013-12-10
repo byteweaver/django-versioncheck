@@ -1,19 +1,22 @@
 import django
 import re
-import urllib
+from urllib import request
+from distutils.version import LooseVersion
 
 
 def get_available_versions():
     VERSION_REGEX = re.compile('^<a href=".*">Django-(.*)\.tar\.gz</a>')
 
-    data = urllib.urlopen("https://pypi.python.org/packages/source/D/Django/").read()
+    data = request.urlopen("https://pypi.python.org/packages/source/D/Django/").read()
     versions = []
 
     for line in data.splitlines():
+        line = line.decode('utf-8')
         if VERSION_REGEX.match(line):
-            versions.append(VERSION_REGEX.split(line)[1])
+            version = LooseVersion(VERSION_REGEX.split(line)[1])
+            versions.append(version)
 
-    versions = sorted(versions, key=lambda version: -int(version.replace('.', '')))
+    versions = sorted(versions, reverse=True)
 
     return versions
 
