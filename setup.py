@@ -12,7 +12,7 @@ setup(
     version=versioncheck.__version__,
     description='A small django app which tries to be annoying if your django version is outdated.',
     long_description=read('README.md'),
-    license='MIT License',
+    license='BSD',
     author='Richard Stromer',
     author_email='noxan@byteweaver.org',
     url='https://github.com/noxan/django-versioncheck',
