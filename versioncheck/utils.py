@@ -1,24 +1,14 @@
 import django
-import re
-from urllib import request
-from distutils.version import LooseVersion
+
+try:
+    import xmlrpclib
+except ImportError:
+    import xmlrpc.client as xmlrpclib
 
 
 def get_available_versions():
-    VERSION_REGEX = re.compile('^<a href=".*">Django-(.*)\.tar\.gz</a>')
-
-    data = request.urlopen("https://pypi.python.org/packages/source/D/Django/").read()
-    versions = []
-
-    for line in data.splitlines():
-        line = line.decode('utf-8')
-        if VERSION_REGEX.match(line):
-            version = LooseVersion(VERSION_REGEX.split(line)[1])
-            versions.append(version)
-
-    versions = sorted(versions, reverse=True)
-
-    return versions
+    client = xmlrpclib.ServerProxy('https://pypi.python.org/pypi')
+    return client.package_releases('Django')
 
 
 def get_lastest_version():
