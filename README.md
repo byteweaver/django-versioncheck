@@ -10,7 +10,7 @@ If you want to install the latest stable release from PyPi:
 
 If you want to install the latest development version from GitHub:
 
-    $ pip install -e git://github.com/noxan/django-versioncheck#egg=django-versioncheck
+    $ pip install -e git://github.com/byteweaver/django-versioncheck#egg=django-versioncheck
 
 Add `versioncheck` to your `INSTALLED_APPS`:
 
