@@ -27,6 +27,17 @@ version and the latest upstream version on PYPI.
 
     $ python manage.py checkversion
 
+### Web view usage
+
+Hook this app into your urls.py:
+
+    urlpatterns = patterns('',
+        ...
+        url(r'^versioncheck/', include('versioncheck.urls', namespace='versioncheck')),
+        ...
+    )
+
+WARNING: This view is not secured and exposes your current Django version, use with caution!
 
 ## Python version notice
 
