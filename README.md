@@ -37,5 +37,4 @@ The current version is developed to be used with Python 3 and only tested on thi
 
 It is just a protoype, most features are not ready yet.
 
-* Email notifications if django is outdated
-* View restricted to admins which shows django versions
+https://github.com/byteweaver/django-versioncheck/issues
