@@ -11,7 +11,7 @@ def get_available_versions():
     return client.package_releases('Django')
 
 
-def get_lastest_version():
+def get_latest_version():
     return get_available_versions()[0]
 
 
