@@ -1,6 +1,6 @@
 # django-versioncheck
 
-Prototyping a small django app which tries to be annoying if your django version is outdated.
+Django application which tries to be annoying if your Django version is outdated
 
 ## Installation
 

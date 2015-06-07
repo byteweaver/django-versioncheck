@@ -10,7 +10,7 @@ def read(fname):
 setup(
     name='django-versioncheck',
     version=versioncheck.__version__,
-    description='A small django app which tries to be annoying if your django version is outdated.',
+    description='Django application which tries to be annoying if your Django version is outdated.',
     long_description=read('README.md'),
     license='BSD',
     author='Richard Stromer',
