@@ -33,6 +33,10 @@ version and the latest upstream version on PYPI.
 The current version is developed to be used with Python 3 and only tested on this major version.
 
 
+## Changelog
+
+See `Changelog.md` file.
+
 ## Todo & Roadmap
 
 It is just a protoype, most features are not ready yet.
